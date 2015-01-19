@@ -15,6 +15,7 @@ class App.CasesShowController
 
       onBeforeAction: ->
         caseId = @params._id
+        # alert 'caseId (' + caseId + ') is available in the controller.'
 
         self.tracker.nonreactive -> self._setCurrentCase caseId
 

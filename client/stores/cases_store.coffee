@@ -17,4 +17,5 @@ class App.CasesStore extends Space.ui.Store
     )
 
   _setCurrentCase: (caseId) ->
+    # alert 'caseId (' + caseId + ') is available in the store.'
     @setState 'case', @cases.findOne caseId
