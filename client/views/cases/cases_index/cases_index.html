@@ -1,0 +1,12 @@
+<template name="casesIndex">
+  {{#with state}}
+    {{#each cases}}
+      <div style="cursor: pointer; margin-bottom: 50px;">
+        <h2>{{name}}</h2>
+        <p>{{note}}</p>
+      </div>
+    {{else}}
+      No Cases :(
+    {{/each}}
+  {{/with}}
+</template>

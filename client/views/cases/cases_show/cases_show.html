@@ -1,0 +1,12 @@
+<template name="casesShow">
+  <a href="/">Back</a>
+  {{#with state}}
+    {{#with case}}
+      <h1>{{name}}</h1>
+      <p>{{note}}</p>
+    {{/with}}
+    {{#if case}}
+      <b style="cursor: pointer;">Click here to update Case, it's not reactive /: Then go back and open this case again.</b>
+    {{/if}}
+  {{/with}}
+</template>
