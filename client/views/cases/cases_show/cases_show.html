@@ -9,4 +9,21 @@
       <b style="cursor: pointer;">Click here to update Case, it's not reactive /: Then go back and open this case again.</b>
     {{/if}}
   {{/with}}
+
+  <!--
+
+  This is the same data, coming from a regular Template helper. This, compared to the data
+  from the Mediator and Store, is reactive. Something strange is, that it also does not show any data,
+  if you open the document directly opening /show/_id. But it shows the data, when you come from the list,
+  even if it's the first document you open. The mediator returns null in that case.
+
+  -->
+  <!--
+  {{#if caseFromHelpers}}
+    <hr style="margin-top: 250px;"/>
+    <p>This is the same document. The only difference is, that it comes from a helper. Click above to see it's reactive:</p>
+    <h1>{{caseFromHelpers.name}}</h1>
+    <p>{{caseFromHelpers.note}}</p>
+  {{/if}}
+  -->
 </template>
